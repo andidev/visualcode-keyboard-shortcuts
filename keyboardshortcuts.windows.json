@@ -98,16 +98,16 @@
     "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalPromptBarVisible || terminalProcessSupported && terminalPromptBarVisible"
   },
   {
-    "key": "shift+cmd+p",
+    "key": "shift+alt+ctrl+p",
+    "command": "projectManager.listProjects"
+  },
+  {
+    "key": "shift+alt+p",
     "command": "projectManager.listProjectsNewWindow"
   },
   {
-    "key": "alt+cmd+p",
+    "key": "shift+alt+p",
     "command": "-projectManager.listProjects"
-  },
-  {
-    "key": "shift+alt+cmd+p",
-    "command": "projectManager.listProjects"
   },
   {
     "key": "shift+cmd+p",
@@ -352,5 +352,35 @@
     "key": "ctrl+shift+r",
     "command": "-editor.action.refactor",
     "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
-  }
+  },
+  {
+    "key": "ctrl+shift+alt+down",
+    "command": "workbench.action.editor.nextChange",
+    "when": "editorTextFocus && !textCompareEditorActive && quickDiffDecorationCount != '0'",
+  },
+  {
+    "key": "alt+f5",
+    "command": "-workbench.action.editor.nextChange",
+    "when": "editorTextFocus && !textCompareEditorActive && quickDiffDecorationCount != '0'",
+  },
+  {
+    "key": "ctrl+shift+alt+up",
+    "command": "workbench.action.editor.previousChange",
+    "when": "editorTextFocus && !textCompareEditorActive && quickDiffDecorationCount != '0'",
+  },
+  {
+    "key": "shift+alt+f5",
+    "command": "-workbench.action.editor.previousChange",
+    "when": "editorTextFocus && !textCompareEditorActive && quickDiffDecorationCount != '0'",
+  },
+  {
+    "key": "ctrl+shift+z",
+    "command": "git.revertSelectedRanges",
+    "when": "editorTextFocus && !operationInProgress && resourceScheme == 'file'"
+  },
+  {
+    "key": "ctrl+k ctrl+r",
+    "command": "-git.revertSelectedRanges",
+    "when": "editorTextFocus && !operationInProgress && resourceScheme == 'file'"
+  },
 ]
