@@ -2,36 +2,36 @@
 [
   {
     "key": "cmd+i",
-    "command": "composerMode.agent"
+    "command": "composerMode.agent",
   },
   {
     "key": "alt+escape",
     "command": "-editor.action.triggerSuggest",
-    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible",
   },
   {
     "key": "alt+escape",
-    "command": "workbench.action.terminal.toggleTerminal"
+    "command": "workbench.action.terminal.toggleTerminal",
   },
   {
     "key": "ctrl+shift+[Equal]",
     "command": "-workbench.action.terminal.toggleTerminal",
-    "when": "terminal.active"
+    "when": "terminal.active",
   },
   {
     "key": "alt+f12",
     "command": "-workbench.action.terminal.toggleTerminal",
-    "when": "terminal.active && terminalFocus"
+    "when": "terminal.active && terminalFocus",
   },
   {
-    "key": "ctrl+t",
+    "key": "cmd+t",
     "command": "workbench.action.terminal.new",
-    "when": "terminalFocus"
+    "when": "terminalFocus",
   },
   {
     "key": "ctrl+shift+oem_3",
     "command": "-workbench.action.terminal.new",
-    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile",
   },
   {
     "key": "cmd+w",
@@ -39,20 +39,20 @@
     "args": {
       "commands": [
         "workbench.action.terminal.killActiveTab",
-        "workbench.action.terminal.focus"
-      ]
+        "workbench.action.terminal.focus",
+      ],
     },
-    "when": "terminalFocus"
+    "when": "terminalFocus",
   },
   {
     "key": "ctrl+shift+tab",
     "command": "workbench.action.terminal.focusPrevious",
-    "when": "terminalFocus"
+    "when": "terminalFocus",
   },
   {
     "key": "ctrl+tab",
     "command": "workbench.action.terminal.focusNext",
-    "when": "terminalFocus"
+    "when": "terminalFocus",
   },
   {
     "key": "ctrl+w",
@@ -60,149 +60,167 @@
     "args": {
       "commands": [
         "workbench.action.terminal.killActiveTab",
-        "workbench.action.terminal.focus"
-      ]
+        "workbench.action.terminal.focus",
+      ],
     },
-    "when": "terminalFocus"
+    "when": "terminalFocus",
   },
   {
     "key": "cmd+k",
     "command": "-git.commitAll",
-    "when": "!terminalFocus && !inDebugMode && !operationInProgress"
+    "when": "!terminalFocus && !inDebugMode && !operationInProgress",
   },
   {
     "key": "cmd+k",
     "command": "!terminalFocus && workbench.action.lastEditorInGroup",
-    "when": "!terminalFocus"
+    "when": "!terminalFocus",
   },
   {
     "key": "cmd+k",
     "command": "workbench.view.scm",
-    "when": "!terminalFocus && workbench.scm.active && activeViewlet != 'workbench.view.scm'"
+    "when": "!terminalFocus && workbench.scm.active && activeViewlet != 'workbench.view.scm'",
   },
   {
     "key": "cmd+k",
     "command": "workbench.action.toggleSidebarVisibility",
-    "when": "!terminalFocus && activeViewlet == 'workbench.view.scm'"
+    "when": "!terminalFocus && activeViewlet == 'workbench.view.scm'",
   },
   {
     "key": "cmd+down",
     "command": "git.openFile",
-    "when": "config.git.enabled && isInDiffEditor"
+    "when": "config.git.enabled && isInDiffEditor",
   },
   {
     "key": "up",
     "command": "editor.action.previousMatchFindAction",
-    "when": "findWidgetVisible && (editorFocus && findInputFocussed)"
+    "when": "findWidgetVisible && (editorFocus && findInputFocussed)",
   },
   {
     "key": "shift+cmd+g",
     "command": "-editor.action.previousMatchFindAction",
-    "when": "findWidgetVisible && (editorFocus && findInputFocussed)"
+    "when": "findWidgetVisible && (editorFocus && findInputFocussed)",
   },
   {
     "key": "down",
     "command": "editor.action.nextMatchFindAction",
-    "when": "findWidgetVisible && (editorFocus && findInputFocussed)"
+    "when": "findWidgetVisible && (editorFocus && findInputFocussed)",
   },
   {
     "key": "cmd+g",
     "command": "-editor.action.nextMatchFindAction",
-    "when": "findWidgetVisible && (editorFocus && findInputFocussed)"
+    "when": "findWidgetVisible && (editorFocus && findInputFocussed)",
   },
   {
     "key": "up",
     "command": "workbench.action.terminal.findPrevious",
-    "when": "terminalFindFocused && terminalFindVisible"
+    "when": "terminalFindFocused && terminalFindVisible",
   },
   {
     "key": "shift+cmd+g",
     "command": "-workbench.action.terminal.findPrevious",
-    "when": "terminalFindFocused && terminalFindVisible"
+    "when": "terminalFindFocused && terminalFindVisible",
   },
   {
     "key": "down",
     "command": "workbench.action.terminal.findNext",
-    "when": "terminalFindFocused && terminalFindVisible"
+    "when": "terminalFindFocused && terminalFindVisible",
   },
   {
     "key": "cmd+g",
     "command": "-workbench.action.terminal.findNext",
-    "when": "terminalFindFocused && terminalFindVisible"
+    "when": "terminalFindFocused && terminalFindVisible",
   },
   {
     "key": "alt+w",
-    "command": "workbench.action.closeOtherEditors"
+    "command": "workbench.action.closeOtherEditors",
   },
   {
     "key": "alt+cmd+t",
-    "command": "-workbench.action.closeOtherEditors"
+    "command": "-workbench.action.closeOtherEditors",
   },
   {
     "key": "alt+c",
     "command": "cursorai.action.generateInTerminal",
-    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalPromptBarVisible || terminalProcessSupported && terminalPromptBarVisible"
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalPromptBarVisible || terminalProcessSupported && terminalPromptBarVisible",
   },
   {
     "key": "cmd+k",
     "command": "-cursorai.action.generateInTerminal",
-    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalPromptBarVisible || terminalProcessSupported && terminalPromptBarVisible"
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalPromptBarVisible || terminalProcessSupported && terminalPromptBarVisible",
   },
   {
     "key": "shift+cmd+p",
-    "command": "projectManager.listProjectsNewWindow"
+    "command": "projectManager.listProjectsNewWindow",
   },
   {
     "key": "alt+cmd+p",
-    "command": "-projectManager.listProjects"
+    "command": "-projectManager.listProjects",
   },
   {
     "key": "shift+alt+cmd+p",
-    "command": "projectManager.listProjects"
+    "command": "projectManager.listProjects",
   },
   {
     "key": "shift+cmd+p",
-    "command": "-workbench.action.showCommands"
+    "command": "-workbench.action.showCommands",
   },
   {
     "key": "alt+cmd+w",
-    "command": "workbench.action.closeWindow"
+    "command": "workbench.action.closeWindow",
   },
   {
     "key": "shift+cmd+w",
-    "command": "-workbench.action.closeWindow"
+    "command": "-workbench.action.closeWindow",
   },
   {
     "key": "ctrl+shift+cmd+up",
     "command": "workbench.action.editor.previousChange",
-    "when": "editorTextFocus && !textCompareEditorActive"
+    "when": "editorTextFocus && !textCompareEditorActive",
   },
   {
     "key": "ctrl+shift+cmd+down",
     "command": "workbench.action.editor.nextChange",
-    "when": "editorTextFocus && !textCompareEditorActive"
+    "when": "editorTextFocus && !textCompareEditorActive",
   },
   {
     "key": "ctrl+shift+alt+z",
     "command": "git.revertSelectedRanges",
-    "when": "editorTextFocus && !editorReadonly && !operationInProgress"
+    "when": "editorTextFocus && !editorReadonly && !operationInProgress",
   },
   {
     "key": "ctrl+shift+cmd+z",
     "command": "git.revertSelectedRanges",
-    "when": "editorTextFocus && !editorReadonly && !operationInProgress"
+    "when": "editorTextFocus && !editorReadonly && !operationInProgress",
   },
   {
     "key": "ctrl+shift+r",
-    "command": "code-runner.run"
+    "command": "code-runner.run",
   },
   {
     "key": "ctrl+alt+n",
-    "command": "-code-runner.run"
+    "command": "-code-runner.run",
   },
   {
     "key": "ctrl+shift+r",
     "command": "-editor.action.refactor",
-    "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+    "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly",
+  },
+  {
+    "key": "alt+f7",
+    "command": "editor.action.inlineDiffs.nextDiffFile",
+  },
+  {
+    "key": "alt+l",
+    "command": "-editor.action.inlineDiffs.nextDiffFile",
+    "when": "editorTextFocus && inlineDiffs.hasInlineDiffsInAnyEditor",
+  },
+  {
+    "key": "alt+cmd+n",
+    "command": "editor.action.codeAction",
+    "args": {
+      "kind": "refactor.inline",
+      "apply": "ifSingle",
+    },
+    "when": "editorTextFocus && !editorReadonly",
   },
 ]
